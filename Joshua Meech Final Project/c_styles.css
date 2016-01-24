@@ -1,0 +1,57 @@
+/*
+   New Perspectives on HTML
+   Tutorial 3
+   Case Problem 1
+
+   ICI Text and Color Styles
+   Author: Josh Meech	
+   Date:   12/11/15
+
+   Filename:         c_styles.css
+   Supporting Files: none
+
+*/
+
+/* Body Styles */
+
+body {
+	background-color: black;
+	color: white; 
+	font-family: Century Gothic, sans-serif;
+	
+}
+/* Heading Styles */
+
+header h1 {
+	color: yellow;
+	font: Courier New, Courier, monospace;
+	letter-spacing: 20px;
+	font-size: 28px;
+	text-align: center;
+}
+
+article h2 {
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	
+}
+article p {
+	text-align: justify;
+}
+
+strong.keyword{
+	color: yellow;
+	font-weight: normal;
+}
+
+/* Footer Styles */
+footer p {
+	text-align: center;
+}
+
+/* Image Styles */
+
+img[usemap] {
+	border: 0px;
+}

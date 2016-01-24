@@ -1,0 +1,53 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 10
+   Case Problem 4
+   Filename: styles.css
+
+   Author: Josh Meech
+   Date: 1/7/16
+
+*/
+
+
+/* body styles */
+
+body {
+	background: yellow;
+	
+	min-width: 1000px;
+	max-width: 1400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	width: 100%
+}
+
+header {
+	
+	margin: 5px 0px 5px 0px;
+	width: 100%;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+/* section styles */
+
+section {
+	
+	background-color: rgb(65,62,118);
+	border: 10px outset rgb(111,101,173);
+	display: block;
+	
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 50%;
+}
+
+p {
+	color: white;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+	<!--
+      New Perspectives on HTML, CSS, and JavaScript
+      
+      6-3 Homework: Using Array Methods and Event Handlers to Populate Forms
+
+      Author: Josh Meech
+      Date:   1/15/16
+
+      Filename:         arrays.htm
+      Supporting files: array.css, array.js, modernizr-1.5.js
+	  
+	  
+	X1. Create an HTML form.
+	X2. Create and Initialize three arrays.
+	3. Use for-loops to populate those arrays.
+	X4. Add an element to the end of one array.
+	X5. Remove an element from the end of another array.
+	X6. Add a new element to the beginning of one array.
+	X7. Add at least one additional array method of your choice.
+	X8. Convert an array to a string.
+	X9. Use the converted string, assign to a string variable, and use it to populate a form field.
+	X10. Create different functions to handle the operations of steps 4, 5, 6, and 7. (You can create additional array methods.)
+	X11. Create four or more buttons on the form with different event handlers to start the above functions upon clicking them.
+	X12. Create an additional button with an event handler to complete the operation in step 10.
+
+	-->
+	
+	<meta charset="UTF-8" />
+	<title>JS Web Form</title>
+	<script src="modernizr-1.5.js"></script>
+	<script src="array.js" type="text/stylesheet"></script>
+	<link href="array.css" rel="stylesheet" />
+	<link href="backtoportfolio.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+	<a href="final.htm" style="text-decoration: none" id="fixedbutton">Back to Portfolio</a>
+		<header>
+			<h1>Using Array Methods and Event Handlers to Populate Forms</h1>
+		</header>
+		
+		<section>
+		
+			
+				<form id="form" name="form">
+				
+					<label for="names1">Names 1</label></br>
+					<input type="text" name="names1" id="names1" readonly="readonly" /></br>
+					<input type="button" value="Push Array" onclick="addToEnd()" /></br>
+					</br>
+					<label for="numbers1">Numbers 1</label></br>
+					<input type="text" name="numbers1" id="numbers1" readonly="readonly" /></br>
+					<input type="button" value="Pop Array" onclick="removeFromEnd()" /></br>
+					</br>
+					<label for="cars1">Cars 1</label></br>
+					<input type="text" name="cars1" id="cars1" readonly="readonly" /></br>
+					<input type="button" value="Unshift Array" onclick="addtoBeginning()" /></br>
+					</br>
+					<label for="names2">Names 2</label></br>
+					<input type="text" name="names2" id="names2" readonly="readonly" /></br>
+					<input type="button" value="Reverse Array" onclick="reverseArray()" /></br>
+					</br>
+					<label for="numbers2">Numbers 2</label></br>
+					<input type="text" name="numbers2" id="numbers2" readonly="readonly" /></br>
+					<input type="button" value="Convert to String" onclick="writeString()" /></br>
+					</br>
+					<label for="runAll">Run all</label></br>
+					<input type="text" name="runAll" id="runAll" readonly="readonly" /></br>
+					<input type="button" value="Run All" onclick="runAll()" /></br>
+					</br>
+
+					
+				</form>
+		
+		
+		</section>
+	
+	</body>
+	
+</html>

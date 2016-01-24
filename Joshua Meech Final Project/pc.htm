@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<!--
+      New Perspectives on HTML and CSS
+      Tutorial 6
+      Tutorial Case 4
+
+      Millennium Computers 
+      Author: Josh Meech
+      Date:   12/20/15
+
+      Filename:         pc.htm
+      Supporting files: go.png, mclogo.jpg, stop.png, mill.css, oform.css
+
+	-->
+   
+   
+	  <meta charset="UTF-8" />
+      <title>Order Form</title>
+      <script src="modernizr-1.5.js"></script>
+	  <script src="formsubmit.js"></script>
+      <link href="mill.css" rel="stylesheet" />
+	  <link href="oform.css" rel="stylesheet" />
+	  <link href="backtoportfolio.css" rel="stylesheet" type="text/css" />
+	  
+	</head>
+	
+	<body>
+	<a href="final.htm" style="text-decoration: none" id="fixedbutton">Back to Portfolio</a>
+		<header>
+			<img src="mclogo.jpg" alt="Millennium Computers" />
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Sales</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About Us</a></li>
+				</ul>
+			</nav>
+			
+			<article>
+				<h1>Order Form</h1>
+				<p>Thanks for shopping with Millennium Computers! We are a discount 
+				   mail-order company specializing in high quality computers and 
+				   computer components.
+				</p>
+				<p>Below you will find our custom order form. <b>Please be sure to fill out all fields.</b>
+				   If you have any questions or feel overwhelmed feel free to call 
+				   Customer Service at <b>1-800-555-1234</b> or click the "Contact Me"
+				   button at the bottom of the page.
+				</p>
+			</article>
+		</header>
+	<section>
+		<p>Required values are marked by an asterisk (*)</p>
+	  
+		<form id="cOrder" name="cOrder"
+			action="http://www.mill_computers.com/orders/processs.cgi"
+			method="post">
+		
+			<fieldset id="custInfo">
+				<legend>Customer Information</legend>
+				
+				<label for="fName">First Name *</label>
+				<input name="fName" id="fName" 
+						required="required" />
+				
+				<label for="lName">Last Name *</label>
+				<input name="lName" id="lName"
+						required="required" />
+				
+				<label for="street">Street Address *</label>
+				<input name="street" id="street"
+						required="required" />
+				
+				<label for="city">City *</label>
+				<input name="city" id="city" 
+						required="required" />
+				
+				<label for="state">State *</label>
+				<input name="state" id="state"
+						required="required" />
+				
+				<label for="zip">Zip *</label>
+				<input name="zip" id="zip"
+						required="required" 
+						placeholder="nnnnn (-nnnn)" />
+				
+				<label for="phone">Phone *</label>
+				<input name="phone" id="phone"
+						required="required"
+						placeholder="(nnn)nnn-nnnn"/>
+				
+			</fieldset>
+			
+			<fieldset>
+				<legend>Computer Specifications</legend>
+				
+				<label for="pSpeed">Processor Speed</label>
+				<select name="pSpeed" id="pSpeed">
+					<option value="3.2">3.2 GHz</option>
+					<option value="4">4 GHz</option>
+					<option value="5.2">5.2 GHz</option>
+				</select>
+				
+				<label for="mem">Memory</label>
+				<select name="mem" id="mem">
+					<option value="1">1 GB</option>
+					<option value="2">2 GB</option>
+					<option value="4">4 GB</option>
+					<option value="8">8 GB</option>
+				</select>
+				
+				<label for="monitor">Monitor Size</label>
+				<select name="monitor" id="monitor" />
+					<option value="15">15"</option>
+					<option value="17">17"</option>
+					<option value="19">19"</option>
+					<option value="21">21"</option>
+				</select>
+				<label for="hd">Hard Drive</label>
+				<select name="hd" id="hd" />
+					<option value="240">240 GB</option>
+					<option value="500">500 GB</option>
+					<option value="750">750 GB</option>
+					<option value="1tb">1 TB</option>
+				</select>
+				
+				<label for="dvd">DVD Burner</label>
+				<fieldset class="optionGroup">
+					<label for="sYes">Yes</label>
+					<input type="radio" name="dvd" id="sYes"
+						   value="yes" />
+						   
+					<label for="sNo">No</label>
+					<input type="radio" name="dvd" id="sNo"
+						   value="no" />
+				</fieldset>
+				
+				<label for="tuner">Tuner Card</label>
+				<fieldset class="optionGroup">
+					<label for="sYes">Yes</label>
+					<input type="radio" name="tuner" id="sYes"
+						   value="yes" />
+						   
+					<label for="sNo">No</label>
+					<input type="radio" name="tuner" id="sNo"
+						   value="no" />
+				</fieldset>
+				
+				<label for="mCard">Media Card Reader</label>
+				<fieldset class="optionGroup">
+					<label for="sYes">Yes</label>
+					<input type="radio" name="mCard" id="sYes"
+						   value="yes" />
+						   
+					<label for="sNo">No</label>
+					<input type="radio" name="mCard" id="sNo"
+						   value="no" />
+				</fieldset>
+				
+			</fieldset>
+			
+			<label id="warranty">
+				<input type="checkbox" name="warranty" />
+				Would you like to purchase a 24-month extended warranty?
+			</label>
+			
+			<label for="comments">Additional Information/Comments:</label>
+			<textarea name="comments" id="comments"></textarea>
+			
+			<p>
+				<input type="submit" value="Send Order" />
+				<input type="reset" value="Cancel Order" />
+				<input type="submit" value="Contact Me" />
+			</p>
+			
+	    </form>
+		
+	</section>	
+	
+	<footer>
+		<address>
+			Millennium Computers &bull;
+			555 Random St. &bull;
+			Random Town, MN 12345 &bull;
+			1-800-555-1234
+		</address>
+	</footer>
+	
+	</body>
+   
+   
+</html>

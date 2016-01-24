@@ -1,0 +1,24 @@
+/*
+   New Perspectives on HTML and CSS
+   
+   4-3 Homework: Multimedia Design
+
+   
+   Author: Josh Meech
+   Date:   12/28/15
+
+   Filename:         mod4_multimedia.css
+   Supporting Files: 
+
+*/
+
+/* multimedia control styles */
+
+audio, video {
+	background-color: white;
+	border: 10px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+}

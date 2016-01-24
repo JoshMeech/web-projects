@@ -1,0 +1,143 @@
+/*
+      New Perspectives on HTML and CSS
+      Tutorial 6
+      Tutorial Case 4
+
+      Millennium Computers order form
+      Author: Josh Meech
+      Date:   12/20/15
+
+      Filename:         oform.css
+      Supporting files:  go.png, stop.png
+
+*/
+
+/* field set styles */
+
+fieldset {
+	background-color: rgba(8, 11, 226, 0.08);
+	border: 1px solid grey;
+	margin: 10px 1px 10px 1px;
+	width: 90%;
+}
+
+legend {
+	background-color: rgba(8, 11, 226, 0.3);
+	color: black;
+	padding: 1px 0px;
+	text-indent: 10px;
+	width: 100%;
+}
+
+/* label styles */
+
+label {
+	clear: left;
+	display: block;
+	float: left;
+	font-size: 1em;
+	Margin: 10px 5px 10px 5px;
+	width: 40%;
+	
+}
+
+/* input styles */
+
+input {
+	display: block;
+	float: left;
+	font-size: 1em;
+	margin: 10px 5px;
+	width: 50%;
+}
+
+input#state {
+	width: 50px;
+}
+
+/* selction list styles */
+
+select {
+	display: block;
+	float: left;
+	font-size: 1em;
+	margin: 10px 0px;
+}
+
+/* option button styles */
+
+fieldset.optionGroup {
+	border-width: 0px;
+}
+
+fieldset.optionGroup label {
+	display: inline;
+	float: none;
+	margin: 0px 5px 0px 0px;
+	width: 30px;
+}
+
+fieldset.optionGroup input {
+	display: inline;
+	float: none;
+	margin: 0px 5px 0px 0px;
+	width: 20px;
+}
+
+/* text area styles */
+
+textarea {
+	display: block;
+	font-size: 1em;
+	float: left;
+	height: 150px;
+	margin: 10px 0px;
+	width: 50%;
+}
+
+/* button styles */
+
+form p {
+	text-align: center;
+}
+
+input[type="submit"], input[type="reset"] {
+	display: inline;
+	float: none;
+	height: 40px;
+	width: 200px;
+}
+
+/* checkbox styles */
+
+#warranty {
+	color: black;
+	float: left;
+	margin: 5px auto;
+	text-align: left;
+	width: 90%
+}
+
+/* validation styles */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220, 255, 220);
+}
+
+input:focus:valid {
+	background: rgba(8, 11, 226, 0.3) url(go.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}		
+
+input:focus:invalid {
+	background: rgba(8, 11, 226, 0.3) url(stop.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}

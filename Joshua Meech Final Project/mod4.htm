@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<!--
+		New Perspectives on HTML and CSS
+		
+		4-3 Homework: Multimedia Design
+		
+		This is a webpage that: 1. uses and integrates 2 audio formats
+								2. uses and integrates 2 video formats
+								3. embeds 1 java applet
+								4. uses CSS3 to display and rotate an object
+								
+		Author: Josh Meech
+		Date: 12/28/15
+		
+		Filename:				mod4.htm
+		Supporting files:		mod4.css eagle.mp3 eagle.ogg
+		
+	-->
+	
+		<meta charset="UTF-8" />
+		<title>Multimedia Website</title>
+		<script src="modernizer-1.5.js"></script>
+		<link href="backtoportfolio.css" rel="stylesheet" type="text/css" />
+		<link href="mod4_multimedia.css" rel="stylesheet" />
+		<link href="mod4_layout.css" rel="stylesheet" />
+		
+	</head>
+	
+	<body>
+	<a href="final.htm" style="text-decoration: none" id="fixedbutton">Back to Portfolio</a>
+		<header>
+			
+				<object type="application/x-java-applet"
+						width="300" height="50">
+				
+					<param name="code" value="movingBanner.java" />
+					<h1>My Multimedia Website</h1>
+				</object>
+				
+		</header>
+		
+		<section>
+			<h2>Audio</h2>
+			
+			<article>
+				<h3>Here is an audio clip of astronaut Neil Armstrong</h3>
+				
+				<audio controls="controls">
+					<source src="eagle.mp3" />
+					<source src="eagle.ogg" />
+					
+					<embed src="eagle.mp3" type="audio/mpeg"
+							width="250" height="20"
+							autoplay="no" controller="yes" />
+				</audio>
+					
+			</article>
+				
+		</section>
+		
+		<section>
+			<h2>Video</h2>
+			
+			<article>
+				<h3>Here is a youtube clip about HTML5 Audio element</h3>
+					
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/aS83ghu7uog" frameborder="0" allowfullscreen></iframe>
+					
+			</article>
+			
+			<article>
+				<h3>Here is a video using HTML5 video element</h3>
+				
+				<video controls="controls">
+					<source src="trailridge.mp4" />
+					<source src="trailridge.webm" />
+					 
+					
+				</video>
+				
+			</article>
+			
+			<article>
+				<h3>Here is a sample image</h3>
+				<img src="sample.jpg" alt="sampleImage" />
+			</article>
+		</section>
+		
+	</body>
+</html>

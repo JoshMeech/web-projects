@@ -1,0 +1,62 @@
+/*
+	New Perspectives on HTML, CSS, and JavaScript
+      
+	6-3 Homework: Using Array Methods and Event Handlers to Populate Forms
+
+       
+    Author: Josh Meech
+    Date:   1/15/16
+
+    Filename:         array.css
+    Supporting files: 
+	
+	
+*/
+
+body {
+	background: Grey;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	
+	
+	background: white;
+	border-radius: 5px;
+	color: black ;
+	display: block;
+	line-height: 2em;
+	margin: 20px auto;
+	text-align: center;
+	text-shadow: rgb(255,140,0) -1px -1px 1px; 
+	width: 50%;
+	
+	
+	box-shadow: -o-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				-moz-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				-webkit-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				 box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+}
+
+section {
+	
+	
+	
+	background: white;
+	border-radius: 5px;
+	color: black ;
+	display: block;
+	line-height: 2em;
+	margin: 20px auto;
+	text-align: center;
+	text-shadow: rgb(255,140,0) -1px -1px 1px; 
+	width: 50%;
+	
+	
+	box-shadow: -o-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				-moz-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				-webkit-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				 box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+
+}

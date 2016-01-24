@@ -1,0 +1,70 @@
+/*
+   New Perspectives on HTML and CSS
+   
+   4-3 Homework: Multimedia Design
+
+   
+   Author: Josh Meech
+   Date:   12/28/15
+
+   Filename:         mod4_layout.css
+   Supporting Files: 
+
+*/
+
+
+/* page styles */
+
+body {
+	background: gray;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+
+/*	background: -o-linear-gradient(white, orange);
+	background: -ms-linear-gradient(white, orange);
+	background: -moz-linear-gradient(white, orange);
+	background: -webkit-linear-gradient(white, orange);
+	background: linear-gradient(white, orange);
+*/
+}
+
+/* heading styles */
+
+
+h1, h2, h3 {
+	
+	
+	background: white;
+	border-radius: 5px;
+	color: black ;
+	display: block;
+	line-height: 2em;
+	margin: 20px auto;
+	text-align: center;
+	text-shadow: rgb(255,140,0) -1px -1px 1px; 
+	width: 50%;
+	
+	
+	box-shadow: -o-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				-moz-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				-webkit-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+				 box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+}
+
+img {
+	border: 10px;
+	margin: 10px;
+	padding: 10px;
+	
+	-o-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+	-moz-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+	-webkit-box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+	box-shadow: inset rgb(255,140,0) -5px -5px 5px ;
+
+
+    -o-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg);
+	 transform: rotate(-5deg);
+
+}

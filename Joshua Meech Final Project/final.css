@@ -1,0 +1,109 @@
+/* 
+		SNHU
+		IT-270 Website Design
+		
+		Author: Josh Meech
+		Date: 1/21/16
+		
+		Filename: final.css
+		Supported Files:
+*/
+
+/* Default styles */
+
+header, footer, section, article, figcaption {
+   display: block;
+   
+}
+
+/* Background styles */
+
+body {
+	background: -o-linear-gradient(rgb(216,54,21) , rgb(231,100,0) , rgb(225,185,68) , rgb(93,206,187) 50%); 
+	background: -ms-linear-gradient(rgb(216,54,21) , rgb(231,100,0) , rgb(225,185,68) , rgb(93,206,187) 50%); 
+	background: -moz-linear-gradient(rgb(216,54,21) , rgb(231,100,0) , rgb(225,185,68) , rgb(93,206,187) 50%); 
+	background: -webkit-linear-gradient(rgb(216,54,21) , rgb(231,100,0) , rgb(225,185,68) , rgb(93,206,187) 50%); 
+	background: linear-gradient(rgb(216,54,21) , rgb(231,100,0) , rgb(225,185,68) , rgb(93,206,187) 50%); 
+	
+	width: 100%;
+	
+	
+}
+
+/* Header styles */
+
+header {
+	
+	font-size: 75px;
+	font-family: 'Cherry Cream Soda', cursive;
+	
+}
+
+h1, h2, h6 {
+	text-align: center;
+
+	color: rgb(73, 39, 12);
+}
+
+
+/* Link styles */
+
+a:link {
+	color: rgb(73, 39, 12)
+}
+
+a:visited {
+	/*  */
+}
+
+a:hover {
+	color: rgb(216,54,21);
+	font-size: 105%;
+}
+
+
+
+a:active {
+	/*  */
+}
+
+
+
+
+article a {
+	float: left;
+	font-family: 'Cherry Cream Soda', cursive;
+	
+}
+
+
+article#intro {
+	text-align: center;
+	font-family: 'Cherry Cream Soda', cursive;
+	font-size: 2em;
+	font-style: bold;
+}
+/* Thumbnail styles */
+
+img.inline {
+  display: inline;
+  border: 10px groove rgb(73, 39, 12);
+  border-radius: 10px;
+  box-shadow:none;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  width: 150px;
+  height: 150px;
+  
+}
+
+img:hover {
+	border: 10px groove rgb(216,54,21);
+} 
+
+footer {
+	clear: left;
+	color: rgb(73, 39, 12);
+	font-family: 'Cherry Cream Soda', cursive;
+}
+

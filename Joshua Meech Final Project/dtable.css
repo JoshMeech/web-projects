@@ -1,0 +1,148 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Case Problem 3
+
+   Dome Table Style Sheet
+   Author: Josh	Meech
+   Date:   12/18/15
+
+   Filename:         dtable.css
+   Supporting files: bottom.jpg, bottomleft.jpg, bottomright.jpg,
+                     left.jpg,right.jpg, tableback.jpg,
+                     top.jpg, topleft.jpg, topright.jpg
+
+*/
+
+
+
+/* domeSpecs styles */
+
+table.domeSpecs {
+	background-image: url(tableback.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 16px;
+	margin: 0px 0px 20px 20px;
+	float: right;
+	border-collapse: collapse;
+}
+
+
+
+/* data cell styles */
+
+table.domeSpecs td {
+	padding: 0px 5px 0px 5px;
+}
+
+
+
+/* table caption styles */
+
+table.domeSpecs caption {
+	font-size: 18px;
+	letter-spacing: 5px;
+	caption-side: top;
+	margin-bottom: 10px;
+}
+
+
+
+/* header row group styles */
+
+table.domeSpecs thead {
+	border-bottom: 2px solid gray;
+	background: url(top.jpg) repeat-x;
+}
+
+table.domeSpecs thead tr {
+	height: 40px;
+}
+
+table.domeSpecs thead th {
+	padding: 0px 5px 0px 5px;
+	letter-spacing: 2px;
+}
+
+table.domeSpecs thead th:first-of-type {
+	background: url(topleft.jpg) left top no-repeat;
+}
+
+table.domeSpecs thead th:last-of-type {
+	background: url(topright.jpg) right top no-repeat;
+}
+
+
+
+/* footer row group styles */
+
+table.domeSpecs tfoot {
+	background: url(bottom.jpg) bottom repeat-x;
+	border-top: 2px solid gray;
+	text-align: center;
+	
+}
+
+table.domeSpecs tfoot tr {
+	height: 40px;
+}
+
+table.domeSpecs tfoot td:first-of-type {
+	background: url(bottomleft.jpg) left bottom no-repeat;
+}
+
+table.domeSpecs tfoot td:last-of-type {
+	background: url(bottomright.jpg) right bottom no-repeat;
+}
+
+
+
+/* table row styles */
+
+table.domeSpecs tbody tr {
+	border-bottom: 1px dotted gray;
+	height: 50px;
+}
+
+
+
+/* row groups border styles */
+
+table.domeSpecs td:first-of-type {
+	background: url(left.jpg) left top repeat-y;
+}
+
+table.domeSpecs td:last-of-type {
+	background: url(right.jpg) right top repeat-y;
+	text-align: right;
+}
+
+
+
+/* table row background styles */
+
+table.domeSpecs tbody tr:nth-of-type(even) {
+	background: rgb(152,228,215);
+	opacity: 0.6;
+}
+
+.domeSpecs tbody tr:nth-of-type(odd) {
+	background: rgb(255,255,255);
+	opacity: 0.6;
+}
+
+/* column styles */
+
+table.domeSpecs col.firstColumn {
+	width: 22%;
+}
+
+table.domeSpecs col.middleColumn {
+	width: 28%;
+}
+
+table.domeSpecs col.lastColumn {
+	width: 22%;
+}

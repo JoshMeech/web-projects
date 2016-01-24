@@ -1,0 +1,22 @@
+/* 
+		SNHU
+		IT-270 Website Design
+		
+		Author: Josh Meech
+		Date: 1/21/16
+		
+		Filename: backtoportfolio.css
+		Supported Files:
+*/
+
+/* Fixed Button styles */
+#fixedbutton {
+    position: fixed;
+    bottom: 60px;
+    right: 50px; 
+	
+	color: rgb(216,54,21);
+	font-size: 20px;
+	font-family: 'Cherry Cream Soda', cursive;
+	
+}
